@@ -1,0 +1,38 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "extends": ["eslint:recommended", "prettier"],
+    "plugins": ["prettier"],
+    "rules": {
+        "prettier/prettier": "error",
+        // "indent": ["error", 4],
+        "linebreak-style": ["error", "unix"],
+        // "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "no-console": [
+            "error",
+            {
+                "allow": ["log"]
+            }
+        ],
+        "quote-props": ["error", "as-needed"],
+        "no-var": "error"
+    },
+    "parserOptions": {
+        "ecmaVersion": 9,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "globals": {
+        "describe": true,
+        "before": true,
+        "beforeEach": true,
+        "afterEach": true,
+        "it": true,
+        "after": true
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "appName": "API",
+    "logLevel": "info",
+    "logEnabled": true,
+    "appKey": "",
+    "api": {
+        "environment": "local",
+        "port": "3000",
+        "version": "v1",
+        "rateLimit":{
+            "minutes": 1,
+            "maxRequests": 100
+        },
+        "cors": {
+            "allowLocal": true,
+            "whitelist": []
+        }
+    },
+    "db": {
+        "driver": "",
+        "host": "",
+        "port": "",
+        "username": "",
+        "password": "",
+        "database": ""
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "name": "momos.io",
+    "private": true,
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "NODE_PATH=. NODE_ENV=localDevelopment nodemon index.js",
+        "inspect": "NODE_PATH=. NODE_ENV=localDevelopment nodemon --inspect index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^4.0.0",
+        "body-parser": "^1.19.0",
+        "config": "^3.3.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "express-async-handler": "^1.1.4",
+        "express-rate-limit": "^5.1.1",
+        "jsonwebtoken": "^8.5.1",
+        "lodash": "^4.17.21",
+        "logger": "0.0.1",
+        "module-alias": "^2.2.2",
+        "moment": "^2.29.0",
+        "mongodb": "^3.5.4",
+        "mongoose": "^5.9.2",
+        "mongoose-paginate": "^5.0.3",
+        "mysql2": "^2.3.3",
+        "pino": "^6.6.1",
+        "sequelize": "^6.16.1",
+        "yargs": "^15.1.0"
+    },
+    "devDependencies": {
+        "eslint": "^6.2.2",
+        "eslint-config-prettier": "^6.10.0",
+        "eslint-plugin-prettier": "^3.1.2",
+        "prettier-eslint": "^9.0.0"
+    },
+    "_moduleAliases": {
+        "@root": ".",
+        "@app": "app",
+        "@database": "database",
+        "@routes": "routes",
+        "@config": "config",
+        "@lib": "lib",
+        "@bootstrap": "app/bootstrap",
+        "@errors": "app/errors",
+        "@controllers": "app/http/controllers",
+        "@middlewares": "app/http/middlewares",
+        "@models": "app/models",
+        "@providers": "app/bootstrap/app-providers",
+        "@repositories": "app/repositories",
+        "@services": "app/services",
+        "@utils": "app/utils",
+        "@helpers": "app/utils/helpers"
+    }
+}
