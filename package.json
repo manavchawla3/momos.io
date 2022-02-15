@@ -15,11 +15,13 @@
     "dependencies": {
         "bcrypt": "^4.0.0",
         "body-parser": "^1.19.0",
+        "cheerio": "^1.0.0-rc.10",
         "config": "^3.3.0",
         "cors": "^2.8.5",
         "express": "^4.17.1",
         "express-async-handler": "^1.1.4",
         "express-rate-limit": "^5.1.1",
+        "get-urls": "9.1.0",
         "jsonwebtoken": "^8.5.1",
         "lodash": "^4.17.21",
         "logger": "0.0.1",
@@ -29,7 +31,9 @@
         "mongoose": "^5.9.2",
         "mongoose-paginate": "^5.0.3",
         "mysql2": "^2.3.3",
+        "node-fetch": "2.6.0",
         "pino": "^6.6.1",
+        "puppeteer": "^13.3.2",
         "sequelize": "^6.16.1",
         "yargs": "^15.1.0"
     },
